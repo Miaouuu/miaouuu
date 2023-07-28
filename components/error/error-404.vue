@@ -1,0 +1,13 @@
+<template>
+  <section class="flex flex-col justify-between gap-8">
+    <p class="dm-serif text-9xl font-bold">404</p>
+    <h2 class="outfit text-4xl">Page Not Found</h2>
+    <p class="sanchez text-xl sm:text-3xl">Sorry, we couldn't find the page you were looking for.</p>
+    <NuxtLink
+      href="/"
+      title="Go back home"
+      class="hover:bg-red poppins w-48 border-2 border-black px-4 py-2 text-center transition-colors duration-150 ease-in-out"
+      >&larr; Go Home</NuxtLink
+    >
+  </section>
+</template>
