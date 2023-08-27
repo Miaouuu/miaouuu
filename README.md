@@ -1,4 +1,4 @@
-# Brutal - The neobrutalist Nuxt theme
+# Miaouuu - The SAS Miaouuu Corp's Landing Page
 
 Brutal is a minimal neobrutalist theme for [Nuxt](https://nuxt.com/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like RSS, Sitemap, ready to get your SEO done right.
 
@@ -33,7 +33,7 @@ To generate the sitemap, you don't need to do anything. It's automatically gener
 
 The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder. You can ofcourse completely change this to your own needs.
 
-The RSS will output to `https://example.com/feed.xml` by default.
+The RSS will output to `https://miaouuu.co/feed.xml` by default.
 
 ## Components
 

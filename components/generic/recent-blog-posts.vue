@@ -9,7 +9,7 @@ const posts = await findPostsSortedWithLimit(props.count || 3)
 </script>
 
 <template>
-  <section class="mt-8">
+  <section v-if="posts.length > 0" class="mt-8">
     <brutal-card>
       <div class="flex items-start justify-between">
         <h2 class="dm-serif mb-8 text-2xl md:text-4xl lg:text-6xl">Recent Blogposts</h2>

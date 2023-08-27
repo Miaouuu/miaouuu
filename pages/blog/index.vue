@@ -1,9 +1,13 @@
 <script setup lang="ts">
 const { findPosts } = useSuperContent()
 
-useSuperHead('Blog', 'Brutal Theme | On this page you can find a collection of blogposts')
+useSuperHead('Blog', 'Miaouuu | On this page you can find a collection of blogposts')
 
 const posts = await findPosts()
+
+if (posts.length === 0) {
+  navigateTo('/404')
+}
 </script>
 
 <template>

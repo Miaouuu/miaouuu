@@ -3,9 +3,9 @@ import { serverQueryContent } from '#content/server'
 
 export default defineEventHandler(async (event) => {
   const feed = new RSS({
-    title: 'Example',
-    site_url: 'https://example.com',
-    feed_url: `https://example.com/feed.xml`,
+    title: 'Miaouuu',
+    site_url: 'https://miaouuu.co',
+    feed_url: `https://miaouuu.co/feed.xml`,
   })
 
   const documents = await serverQueryContent(event).sort({ pubDate: -1 }).where({ _partial: false }).find()
@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
   for (const post of posts) {
     feed.item({
       title: post.title ?? '-',
-      url: `https://example.com${post._path}`,
+      url: `https://miaouuu.co${post._path}`,
       date: post.pubDate,
       description: post.description,
     })

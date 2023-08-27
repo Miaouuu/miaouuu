@@ -2,17 +2,17 @@
 const socials = [
   {
     name: 'GitHub',
-    url: 'https://github.com/',
+    url: 'https://github.com/Miaouuu',
     icon: 'i-uil-github',
   },
   {
     name: 'Twitter',
-    url: 'https://www.twitter.com/',
+    url: 'https://www.twitter.com/MiaouuuCorp',
     icon: 'i-uil-twitter',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/',
+    url: 'https://www.linkedin.com/company/miaouuu-corp',
     icon: 'i-uil-linkedin',
   },
 ]

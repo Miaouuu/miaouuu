@@ -1,10 +1,10 @@
 export const useSuperHead = (title: string, description: string, ogImage?: string) => {
   useHead({
-    title: `Brutal Theme | ${title}`,
+    title: `Miaouuu | ${title}`,
     meta: [
       {
         name: 'title',
-        content: `Brutal Theme | ${title}`,
+        content: `Miaouuu | ${title}`,
       },
       {
         name: 'description',

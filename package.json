@@ -1,7 +1,7 @@
 {
-  "name": "brutal",
+  "name": "miaouuu",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Elian Van Cutsem",
     "email": "hello@elian.codes",
@@ -14,7 +14,7 @@
       "email": "ruben.barr08@gmail.com"
     }
   ],
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://miaouuu.co",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

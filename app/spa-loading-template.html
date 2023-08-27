@@ -1,0 +1,35 @@
+<img src="/logo.svg" alt="logo" class="loader" />
+<style>
+  .loader {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    -webkit-animation: loader 800ms linear infinite;
+    animation: loader 800ms linear infinite;
+  }
+
+  @-webkit-keyframes loader {
+    0% {
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+</style>

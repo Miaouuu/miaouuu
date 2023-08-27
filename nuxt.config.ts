@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   ssr: false,
   site: {
-    url: 'https://example.com',
+    url: 'https://miaouuu.co',
   },
   devtools: { enabled: true },
   experimental: {
@@ -58,6 +58,11 @@ export default defineNuxtConfig({
       ],
       link: [
         {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: '/logo.svg',
+        },
+        {
           rel: 'preconnect',
           href: 'https://fonts.bunny.net',
         },
@@ -68,7 +73,7 @@ export default defineNuxtConfig({
         {
           rel: 'alternate',
           type: 'application/rss+xml',
-          href: 'https://example.com/feed.xml',
+          href: 'https://miaouuu.co/feed.xml',
         },
       ],
     },
