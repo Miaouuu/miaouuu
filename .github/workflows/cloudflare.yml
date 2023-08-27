@@ -31,6 +31,11 @@ jobs:
           path: node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
+      - name: 'Install PNPM'
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 8.6.7
+
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: pnpm install
