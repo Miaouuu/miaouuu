@@ -1,0 +1,8 @@
+name = "miaouuu"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
+account_id = "842e9878e2a81aa49b86ff5acbcaa485"
+
+[site]
+bucket = ".output/public"
