@@ -20,7 +20,7 @@ const props = defineProps<{
     <div class="hidden sm:inline-block">
       <p class="poppins mt-2">tags:</p>
       <div class="flex items-center justify-between">
-        <ul class="mt-2 flex gap-4">
+        <ul class="mt-2 flex flex-wrap gap-4">
           <li v-for="tag in props.post.tags" :key="tag">
             <NuxtLink class="sanchez" :href="`/blog/tags/${tag.toLowerCase()}/`">
               <brutal-pill>{{ tag }}</brutal-pill>

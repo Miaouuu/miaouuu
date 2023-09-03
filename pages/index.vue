@@ -40,7 +40,7 @@ const team = [
     name: 'Vincent Zhu',
     role: 'Fullstack Developer',
     avatar:
-      'https://media.licdn.com/dms/image/D4E35AQEPcaQCBPLb2g/profile-framedphoto-shrink_800_800/0/1678729259071?e=1693764000&v=beta&t=iE60zRPzmUx41Kdr_EBK8lw538N68Nk5ExHvJqMmlL0',
+      'https://media.licdn.com/dms/image/C5603AQF6_r7gzJHqAA/profile-displayphoto-shrink_800_800/0/1543324805004?e=2147483647&v=beta&t=ng3vr3z3O64IpjsuAkvfLtqcGmG3L1T3NR5mhx72ZmQ',
     github: 'https://github.com/Zhiwei-Zhu',
     linkedin: 'https://www.linkedin.com/in/vincentzhu-/',
   },
@@ -86,7 +86,6 @@ const team = [
           </brutal-card>
         </div>
       </section>
-      <recent-blog-posts />
       <section class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
         <brutal-card v-for="people in team" :key="people.name" class="flex flex-col items-start justify-between gap-4">
           <div class="flex items-center justify-center gap-8">
@@ -128,6 +127,7 @@ const team = [
           </div>
         </brutal-card>
       </section>
+      <recent-blog-posts />
     </main>
   </NuxtLayout>
 </template>
