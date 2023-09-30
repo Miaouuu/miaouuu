@@ -2,16 +2,13 @@ interface Body {
   increment: boolean
 }
 
-let x = 0
-
 export default defineEventHandler(async (event) => {
   const body = await readBody<Body>(event)
-  // const { cloudflare } = event.context
+  const { cloudflare } = event.context
   const like = body.increment ? 1 : -1
-  x += like
-  console.log(x)
-  // const currentLikes = (await cloudflare.env.MIAOUUU.get('likes')) ?? 0
-  // await cloudflare.env.MIAOUUU.put('likes', currentLikes + like)
+  const currentLikes = (await cloudflare.env.MIAOUUU.get('likes')) ?? 0
+  const sum = currentLikes + like
+  await cloudflare.env.MIAOUUU.put('likes', sum > 0 ? sum : 0)
   return {
     result: 'success',
   }
