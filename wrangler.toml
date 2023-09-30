@@ -6,3 +6,7 @@ account_id = "842e9878e2a81aa49b86ff5acbcaa485"
 
 [site]
 bucket = ".output/public"
+
+[[kv_namespaces]]
+binding = "MIAOUUU"
+id = "c53a10f589cc4322bae09228d9ac6463"

@@ -1,7 +1,16 @@
 <script setup lang="ts">
 useSuperHead('Home', 'Miaouuu | A minimalistic, neobrutalism theme for Nuxt.')
 
-const builtWith = []
+const builtWith: any[] = []
+const paws = ref<
+  {
+    id: string
+    top: number
+    left: number
+    rotate: number
+    timeOut: ReturnType<typeof setTimeout>
+  }[]
+>([])
 
 const team = [
   {
@@ -53,13 +62,26 @@ const team = [
     linkedin: 'https://www.linkedin.com/in/etienne-secondini-109549182/',
   },
 ]
+
+function click(e: MouseEvent) {
+  const paw = {
+    id: `${e.clientX}${e.clientY}-${Date.now()}`,
+    top: e.pageY - 110,
+    left: e.pageX - 10,
+    rotate: Math.random() * 360,
+    timeOut: setTimeout(() => {
+      paws.value = paws.value.filter((p) => p.id !== paw.id)
+    }, 5000),
+  }
+  paws.value.push(paw)
+}
 </script>
 
 <template>
   <NuxtLayout page-title="Brutal Theme | Home">
-    <main class="bg-pink p-6">
-      <mobile-socials />
-      <section id="about" class="mt-8 grid gap-8 md:mt-4 md:grid-cols-8">
+    <TransitionGroup name="paw" tag="main" class="bg-pink relative p-6" @click="click">
+      <mobile-socials key="mobile-socials" />
+      <section id="about" key="about" class="mt-8 grid gap-8 md:mt-4 md:grid-cols-8">
         <h2 class="hidden">About SAS Miaouuu Corp</h2>
         <div class="col-span-4">
           <brutal-card>
@@ -98,7 +120,10 @@ const team = [
           </brutal-card>
         </div>
       </section>
-      <section class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <section key="section-like-button" class="flex items-center justify-center">
+        <like-button />
+      </section>
+      <section key="people" class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
         <brutal-card v-for="people in team" :key="people.name" class="flex flex-col items-start justify-between gap-4">
           <div class="flex items-center justify-center gap-8">
             <img
@@ -139,7 +164,63 @@ const team = [
           </div>
         </brutal-card>
       </section>
-      <recent-blog-posts />
-    </main>
+      <recent-blog-posts key="recent-blog-posts" />
+      <template v-for="paw in paws" :key="paw.id">
+        <svg
+          width="20"
+          viewBox="0 0 353.11 337.79"
+          class="absolute z-40 mix-blend-soft-light"
+          :style="{ top: `${paw.top}px`, left: `${paw.left}px`, transform: `rotate(${paw.rotate}deg)` }"
+        >
+          <ellipse
+            class="cls-1"
+            cx="64.69"
+            cy="157.82"
+            rx="38.4"
+            ry="55.73"
+            transform="translate(-62.21 43.86) rotate(-25.79)"
+          />
+          <ellipse
+            class="cls-1"
+            cx="129.74"
+            cy="66.53"
+            rx="38.4"
+            ry="55.73"
+            transform="translate(-13.41 38.84) rotate(-16.2)"
+          />
+          <ellipse
+            class="cls-1"
+            cx="231.06"
+            cy="66.53"
+            rx="55.73"
+            ry="38.4"
+            transform="translate(113.25 276.14) rotate(-76.72)"
+          />
+          <ellipse
+            class="cls-1"
+            cx="295.33"
+            cy="155.26"
+            rx="55.73"
+            ry="38.4"
+            transform="translate(30.63 358.4) rotate(-65.24)"
+          />
+          <path
+            class="cls-1"
+            d="m289.79,283.86c0-40.8-50.32-117.87-109.26-117.87s-104.18,77.06-104.18,117.87,47.78-1.81,106.72-1.81,106.72,42.61,106.72,1.81Z"
+          />
+        </svg>
+      </template>
+    </TransitionGroup>
   </NuxtLayout>
 </template>
+
+<style scoped>
+.paw-enter-active,
+.paw-leave-active {
+  transition: opacity 0.3s ease;
+}
+.paw-enter-from,
+.paw-leave-to {
+  opacity: 0;
+}
+</style>

@@ -43,7 +43,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          NITRO_PRESET: cloudflare
+          NITRO_PRESET: cloudflare_module
 
       - name: Install Wrangler
         run: pnpm add -g wrangler@3.4.0

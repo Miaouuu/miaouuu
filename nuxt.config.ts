@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
-  modules: ['@unocss/nuxt', '@nuxt/content', 'nuxt-simple-robots', 'nuxt-simple-sitemap'],
+  modules: ['@unocss/nuxt', '@nuxt/content', 'nuxt-simple-robots', 'nuxt-simple-sitemap', '@vueuse/nuxt'],
   sitemap: {
     xslTips: false,
   },

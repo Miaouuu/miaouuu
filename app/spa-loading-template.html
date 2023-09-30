@@ -1,4 +1,31 @@
 <img src="/logo.svg" alt="logo" class="loader" />
+<div class="loader-paws">
+  <svg width="20" viewBox="0 0 353.11 337.79" class="paw">
+    <ellipse cx="64.69" cy="157.82" rx="38.4" ry="55.73" transform="translate(-62.21 43.86) rotate(-25.79)" />
+    <ellipse cx="129.74" cy="66.53" rx="38.4" ry="55.73" transform="translate(-13.41 38.84) rotate(-16.2)" />
+    <ellipse cx="231.06" cy="66.53" rx="55.73" ry="38.4" transform="translate(113.25 276.14) rotate(-76.72)" />
+    <ellipse cx="295.33" cy="155.26" rx="55.73" ry="38.4" transform="translate(30.63 358.4) rotate(-65.24)" />
+    <path
+      d="m289.79,283.86c0-40.8-50.32-117.87-109.26-117.87s-104.18,77.06-104.18,117.87,47.78-1.81,106.72-1.81,106.72,42.61,106.72,1.81Z" />
+  </svg>
+  <svg width="20" viewBox="0 0 353.11 337.79" class="paw">
+    <ellipse cx="64.69" cy="157.82" rx="38.4" ry="55.73" transform="translate(-62.21 43.86) rotate(-25.79)" />
+    <ellipse cx="129.74" cy="66.53" rx="38.4" ry="55.73" transform="translate(-13.41 38.84) rotate(-16.2)" />
+    <ellipse cx="231.06" cy="66.53" rx="55.73" ry="38.4" transform="translate(113.25 276.14) rotate(-76.72)" />
+    <ellipse cx="295.33" cy="155.26" rx="55.73" ry="38.4" transform="translate(30.63 358.4) rotate(-65.24)" />
+    <path
+      d="m289.79,283.86c0-40.8-50.32-117.87-109.26-117.87s-104.18,77.06-104.18,117.87,47.78-1.81,106.72-1.81,106.72,42.61,106.72,1.81Z" />
+  </svg>
+  <svg width="20" viewBox="0 0 353.11 337.79" class="paw">
+    <ellipse cx="64.69" cy="157.82" rx="38.4" ry="55.73" transform="translate(-62.21 43.86) rotate(-25.79)" />
+    <ellipse cx="129.74" cy="66.53" rx="38.4" ry="55.73" transform="translate(-13.41 38.84) rotate(-16.2)" />
+    <ellipse cx="231.06" cy="66.53" rx="55.73" ry="38.4" transform="translate(113.25 276.14) rotate(-76.72)" />
+    <ellipse cx="295.33" cy="155.26" rx="55.73" ry="38.4" transform="translate(30.63 358.4) rotate(-65.24)" />
+    <path
+      d="m289.79,283.86c0-40.8-50.32-117.87-109.26-117.87s-104.18,77.06-104.18,117.87,47.78-1.81,106.72-1.81,106.72,42.61,106.72,1.81Z" />
+  </svg>
+</div>
+
 <style>
   .loader {
     display: block;
@@ -9,27 +36,76 @@
     transform: translate(-50%, -50%);
     width: 64px;
     height: 64px;
-    -webkit-animation: loader 800ms linear infinite;
-    animation: loader 800ms linear infinite;
   }
 
-  @-webkit-keyframes loader {
+  .loader-paws {
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    z-index: 1031;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .paw {
+    transform: rotate(70deg);
+    margin-top: 1.5rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .paw:nth-child(1) {
+    animation-name: walk-1;
+  }
+
+  .paw:nth-child(2) {
+    transform: rotate(110deg);
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    animation-name: walk-2;
+  }
+
+  .paw:nth-child(3) {
+    animation-name: walk-3;
+  }
+
+  @keyframes walk-1 {
     0% {
-      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 0;
     }
 
-    100% {
-      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    25% {
+      opacity: 1;
     }
   }
 
-  @keyframes loader {
+  @keyframes walk-2 {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 0;
     }
 
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes walk-3 {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 1;
     }
   }
 </style>

@@ -24,7 +24,7 @@ const cssVars = computed(() => {
   <NuxtLink
     :href="props.href"
     :target="props.target"
-    class="brutal-btn sanchez inline-block border-2 border-black px-4 py-2 transition-all duration-150 ease-in-out"
+    class="brutal-btn sanchez z-50 inline-block border-2 border-black px-4 py-2 transition-all duration-150 ease-in-out"
     :style="cssVars"
   >
     <slot />
