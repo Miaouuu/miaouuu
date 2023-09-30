@@ -40,6 +40,7 @@ FormKit 1.0 is out. 🔥🔥🔥
 After a week of announcements, Astro has released version 3.0.
 
 [Read more about Astro 3.0](https://astro.build/blog/astro-3/)
+
 [Announcements](https://twitter.com/astrodotbuild/status/1696170401875853743)
 
 ## Biome
@@ -59,4 +60,5 @@ Fig has joined AWS. They have also decided to shutdown [Cicada](https://cicada.b
 [Antfu](https://twitter.com/antfu7) announced that Unplugin has its own GitHub organization to share unplugin plugins!
 
 [Post on X](https://twitter.com/antfu7/status/1696793638112493760)
+
 [Github Organization](https://github.com/unplugin)
