@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSuperHead('Home', 'Miaouuu | A minimalistic, neobrutalism theme for Nuxt.')
 
-const builtWith = [{ name: 'Delere', url: 'https://delere.email/', icon: 'delere' }]
+const builtWith = []
 
 const team = [
   {
@@ -73,7 +73,19 @@ const team = [
         </div>
         <div class="col-span-4">
           <brutal-card>
-            <h2 class="dm-serif mb-8 text-2xl md:text-4xl lg:text-6xl">Our products</h2>
+            <h2
+              class="dm-serif text-2xl md:text-4xl lg:text-6xl"
+              :class="{
+                'mb-8': builtWith.length > 0,
+                'mb-4': builtWith.length === 0,
+              }"
+            >
+              Our products
+            </h2>
+            <div v-if="builtWith.length === 0" class="flex flex-col items-start justify-between gap-4">
+              <p class="outfit mt-4 text-xl md:text-2xl lg:text-3xl">No products yet</p>
+              <p class="outfit mt-2 text-xl md:text-2xl lg:text-3xl">We are working on it, stay tuned!</p>
+            </div>
             <div v-for="item in builtWith" :key="item.name" class="flex">
               <NuxtLink
                 target="_blank"
