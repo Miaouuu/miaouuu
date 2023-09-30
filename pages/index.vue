@@ -64,7 +64,7 @@ const team = [
         <div class="col-span-4">
           <brutal-card>
             <div class="flex flex-col items-start justify-between gap-4">
-              <p class="outfit mt-4 text-2xl text-white md:text-5xl lg:text-7xl">SAS Miaouuu Corp</p>
+              <p class="outfit mt-4 text-2xl text-white md:text-5xl lg:text-7xl">Miaouuu Corp</p>
               <p class="outfit mt-2 text-xl md:text-3xl lg:text-5xl">
                 We provide the best experience for our customers.
               </p>
