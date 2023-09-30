@@ -13,6 +13,7 @@ const displayNone = debounce(() => {
 }, 750)
 
 const addLikeToKV = debounce(async () => {
+  if (likedStorage.value === liked.value) return
   await useFetch('/api/likes', {
     method: 'POST',
     body: {
