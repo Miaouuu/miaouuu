@@ -6,14 +6,14 @@ const builtWith = [{ name: 'Delere', url: 'https://delere.email/', icon: 'delere
 const team = [
   {
     name: 'Kemici Cagnard',
-    role: 'Chief Executive Officer',
+    role: 'Chief Product Officer',
     avatar:
       'https://media.licdn.com/dms/image/C4D03AQGf2eWrW1r47g/profile-displayphoto-shrink_800_800/0/1624745148471?e=1698883200&v=beta&t=XNODEkxaMU6Xn_1z5EgYemsItnK0U0RszlHiYifDFyQ',
     linkedin: 'https://www.linkedin.com/in/kemici-cagnard/',
   },
   {
     name: 'Guillaume Prigent',
-    role: 'Fullstack Developer',
+    role: 'Chief Executive Officer',
     avatar:
       'https://media.licdn.com/dms/image/D4E03AQF5lE2952Q2tA/profile-displayphoto-shrink_800_800/0/1678119208378?e=1698883200&v=beta&t=mpRBBTs_5OQJ_E46WM9psk1hE89vRpMzJi0dRygXr9o',
     github: 'https://github.com/Lockev',
