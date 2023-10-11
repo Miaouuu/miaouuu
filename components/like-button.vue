@@ -5,8 +5,12 @@ const currentLike = await useFetch('/api/likes')
 likes.value = currentLike.data.value?.likes || 0
 
 const likedStorage = useLocalStorage('liked', false)
-const liked = ref(likedStorage.value)
+const liked = ref(false)
 const display = ref('none')
+
+onMounted(() => {
+  liked.value = likedStorage.value
+})
 
 const displayNone = debounce(() => {
   display.value = 'none'
