@@ -10,7 +10,7 @@ tags:
   - Biome
   - Fig
   - Unplugin
-imgUrl: https://nuxt.com/assets/blog/default.png
+imgUrl: /dev-news.png
 description: Dev News - August 2023 about Nuxt, Astro, FormKit, Biome, Fig and Unplugin!
 layout: blog
 sitemap:

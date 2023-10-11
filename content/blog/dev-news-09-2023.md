@@ -12,7 +12,7 @@ tags:
   - Eslint
   - Svelte
   - Nuxt
-imgUrl: https://nuxt.com/assets/blog/default.png
+imgUrl: /dev-news.png
 description: Dev News - September 2023 about Next, Astro, Node.js, Deno and more!
 layout: blog
 sitemap:
