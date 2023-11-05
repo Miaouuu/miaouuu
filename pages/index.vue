@@ -17,14 +17,14 @@ const team = [
     name: 'Kemici Cagnard',
     role: 'Chief Product Officer',
     avatar:
-      'https://media.licdn.com/dms/image/C4D03AQGf2eWrW1r47g/profile-displayphoto-shrink_800_800/0/1624745148471?e=1698883200&v=beta&t=XNODEkxaMU6Xn_1z5EgYemsItnK0U0RszlHiYifDFyQ',
+      'https://media.licdn.com/dms/image/C4D03AQGf2eWrW1r47g/profile-displayphoto-shrink_800_800/0/1624745148776?e=1704931200&v=beta&t=iGTAviHKi-S4P6-YZoaYo7i3nP8rCT3ks35bzaP4p3g',
     linkedin: 'https://www.linkedin.com/in/kemici-cagnard/',
   },
   {
     name: 'Guillaume Prigent',
     role: 'Chief Executive Officer',
     avatar:
-      'https://media.licdn.com/dms/image/D4E03AQF5lE2952Q2tA/profile-displayphoto-shrink_800_800/0/1678119208378?e=1698883200&v=beta&t=mpRBBTs_5OQJ_E46WM9psk1hE89vRpMzJi0dRygXr9o',
+      'https://media.licdn.com/dms/image/D4E03AQF5lE2952Q2tA/profile-displayphoto-shrink_800_800/0/1678119208378?e=1704931200&v=beta&t=186v622zKSm3jbsOGhJNKs0IVQsnY6VaIGBC1ao-Pcs',
     github: 'https://github.com/Lockev',
     linkedin: 'https://www.linkedin.com/in/prigent-guillaume/',
   },
@@ -32,7 +32,7 @@ const team = [
     name: 'Ruben Barros',
     role: 'Devops Engineer',
     avatar:
-      'https://media.licdn.com/dms/image/D4E03AQEazo_QMf3YsA/profile-displayphoto-shrink_800_800/0/1666967684388?e=1698883200&v=beta&t=eLewE4eMUXq15Z77wM8k5GJppkzxDjh7tV7WQRmpwnk',
+      'https://media.licdn.com/dms/image/D4E03AQEazo_QMf3YsA/profile-displayphoto-shrink_800_800/0/1666967685609?e=1704931200&v=beta&t=O8k-sSmgOQc0e77mWsMcSSRcy-2XS_6prTg9rgVjoGE',
     twitter: 'https://twitter.com/sasnovacat08',
     github: 'https://github.com/SASNOVACAT08',
     linkedin: 'https://www.linkedin.com/in/barrosruben/',
@@ -41,7 +41,7 @@ const team = [
     name: 'Heddi Brahiti',
     role: 'Fullstack Developer',
     avatar:
-      'https://media.licdn.com/dms/image/C4E03AQEcBvBRzJ0sig/profile-displayphoto-shrink_800_800/0/1586808807486?e=1698883200&v=beta&t=7W_gZpwmrFqQJSxHEQVuAc-cy6V66r2fedbsrQTu6pI',
+      'https://media.licdn.com/dms/image/C4E03AQEcBvBRzJ0sig/profile-displayphoto-shrink_800_800/0/1586808807486?e=1704931200&v=beta&t=19FhO_IfWTWUXLQ_OiagYcDKqN3oFCw6VS26IcjDOsY',
     github: 'https://github.com/heddib',
     linkedin: 'https://www.linkedin.com/in/heddi-brahiti/',
   },
@@ -57,7 +57,7 @@ const team = [
     name: 'Etiennne Secondini',
     role: 'Devops Engineer',
     avatar:
-      'https://media.licdn.com/dms/image/C4E03AQHL-CR-qWhuWg/profile-displayphoto-shrink_800_800/0/1658687955579?e=1698883200&v=beta&t=CnPelUgVUmh8vd3UpL6BwHVQQLCa6UZDTIKu-ilTvZI',
+      'https://media.licdn.com/dms/image/D4E35AQHST6MX_AYuFg/profile-framedphoto-shrink_800_800/0/1695653715042?e=1699822800&v=beta&t=n1vxp8fHtoAo0dXPxfCiUiOUJne-lvDij6lMlNXRxnE',
     github: 'https://github.com/etsec-cloud',
     linkedin: 'https://www.linkedin.com/in/etienne-secondini-109549182/',
   },
