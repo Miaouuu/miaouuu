@@ -1,5 +1,8 @@
 <script setup lang="ts">
-useSuperHead('Home', 'Miaouuu | A minimalistic, neobrutalism theme for Nuxt.')
+useSuperHead(
+  'Home',
+  'Welcome to our website! We are a company that provides the best experience for our customers. We talk about dev news, tech, and more!',
+)
 
 const builtWith: any[] = []
 const paws = ref<
